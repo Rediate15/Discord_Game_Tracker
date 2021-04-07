@@ -10,8 +10,8 @@ import logging
 
 logging.basicConfig(filename='tracker.log', format='%(asctime)s %(levelname)-8s %(message)s', level=logging.ERROR, datefmt='%Y-%m-%d %H:%M:%S')
 
-#conn = sqlite3.connect('gametracker.db')
-conn = sqlite3.connect(':memory:')
+conn = sqlite3.connect('gametracker.db')
+#conn = sqlite3.connect(':memory:')
 c = conn.cursor()
 
 try:
