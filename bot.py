@@ -76,7 +76,7 @@ async def on_command_error(ctx, error):
 @commands.check(is_controleChannel)
 async def info(ctx):
     messageBlock = discord.Embed()
-    messageBlock.add_field(name=' ::help', value='Liste aller befehle', inline=False)
+    messageBlock.add_field(name=' ::info', value='Liste aller befehle', inline=False)
     messageBlock.add_field(name=' ::clean', value='Löscht Nachrichten im Channel', inline=False)
     messageBlock.add_field(name=' ::track Beispiel Spiel oder DLC kaufen http://www.beispiellink.de', value='Trackt das mit Namen angegebene Spiel unter der angegebenen Seite', inline=False)
     messageBlock.add_field(name=' ::track http://www.beispiellink.de', value='Trackt das erste Spiel auf dieser Seite', inline=False)
@@ -84,7 +84,7 @@ async def info(ctx):
     messageBlock.add_field(name=' ::trackedGames', value='Zeigt alle von dir verfolgten Spiel', inline=False)
     messageBlock.add_field(name=' ::stopTracking Beispiel Spiel oder DLC kaufen', value='Entfernt das mit Namen angegebene Spiel von den von dir verfolgten Spielen', inline=False)
     messageBlock.add_field(name='Anmerkung:', value='Der Bot sollte für jeden täglich eine Meldung in diesen Channel senden, wenn der Preis eines verfolgten Spiels gesunken ist.\n Geplant ist, dass er dies in der Zukunft per Direktnachricht tut. Aus Überwachungsgründen ist diese Funktion noch ausgestellt', inline=False)
-    messageBlock.add_field(name='Bugreport:', value='githublink\n Unter diesem Link können Fehler gemeldet werden.\n Auch Vorschläge für neue Features können hier vorgeschlagen werden', inline=False)
+    messageBlock.add_field(name='Bugreport:', value='https://github.com/Rediate15/Discord_Game_Tracker/issues\n Unter diesem Link können Fehler gemeldet werden.\n Auch Vorschläge für neue Features können hier vorgeschlagen werden', inline=False)
     await ctx.send(embed=messageBlock)
 
 
